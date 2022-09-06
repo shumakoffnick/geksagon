@@ -3,7 +3,7 @@ import { Navigate } from "react-router-dom";
 import {useAuth} from '../hooks/use-auth'
 import {useDispatch} from 'react-redux'
 import {removeUser} from '../store/slices/userSlice'
-import LinkPage from "LinkPage";
+import LinkPage from "../LinkPage";
 
 const HomePages = ()=>{
     const {isAuth, email} = useAuth()

@@ -2,7 +2,7 @@ import React from "react";
 import {useForm} from 'react-hook-form'
 import { useDispatch, useSelector } from "react-redux";
 import { createShortLink, selectLoading } from '../src/store/slices/linkSlice'
-import { Shortens } from "Shortens";
+import { Shortens } from "./Shortens";
 const LinkPage = ()=>{
     const loading = useSelector(selectLoading)
     
@@ -30,7 +30,7 @@ const LinkPage = ()=>{
                 type="url" placeholder="Shorten a link here" className="LinkPageInput" {...register('Url', {
                     required: 'Please add a link',
                     pattern:{
-                        value: /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g,
+                        value: /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_.~#?&//=]*)/g,
                         message: 'Please enter a valid url'
                     }
                 })}

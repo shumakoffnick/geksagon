@@ -1,6 +1,6 @@
-import HomePages from "pages/HomePages";
-import LoginPages from "pages/LoginPages";
-import RegisterPages from "pages/RegisterPages";
+import HomePages from "./pages/HomePages";
+import LoginPages from "./pages/LoginPages";
+import RegisterPages from "./pages/RegisterPages";
 import React from "react";
 
 import {Routes, Route} from 'react-router-dom'
