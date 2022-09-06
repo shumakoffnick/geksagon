@@ -1,6 +1,6 @@
 import { async } from '@firebase/util';
 import {createSlice, createAsyncThunk} from '@reduxjs/toolkit'
-import {API_BASE_URL} from '/Users/nikolaj/Desktop/geksagon/geksagon-app/src/config'
+import {API_BASE_URL} from '../../config'
 
 export const createShortLink = createAsyncThunk(
     'links/createShortLink',
